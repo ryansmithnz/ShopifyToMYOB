@@ -32,11 +32,11 @@ for CSV_FILE in csv_files:
 
     # CSV_FILE = sys.argv[1] if len(sys.argv) > 1 else "shopifyexport.csv"
 
-    CUSTOMER_NAME = "Kolorex.com(Online sales)"
-    ADDRESS1 = "Kolorex.com(Online sales)"
-    ADDRESS2 = "142 Collingwood Street"
-    ADDRESS3 = "Nelson 7010"
-    ADDRESS4 = "New Zealand"
+    CUSTOMER_NAME = ""
+    ADDRESS1 = ""
+    ADDRESS2 = ""
+    ADDRESS3 = ""
+    ADDRESS4 = ""
 
     customerpo = ""
 
@@ -158,8 +158,6 @@ for CSV_FILE in csv_files:
             # if chargeback.lower().startswith("chargeback") or not chargeback:
                 # continue
                 
-            if product == "GCCB30TR":
-                product = "GCCBTR30"
 
             qty = int(row["Net quantity"])
 
@@ -233,7 +231,7 @@ for CSV_FILE in csv_files:
                 " - % Monthly Charge": "0",
                 "Amount Paid": "$0.00",
                 "Category": "New Zealand",
-                "Location ID": "FHR-ONL"
+                "Location ID": ""
             })
 
     # -------------------------
@@ -294,7 +292,7 @@ for CSV_FILE in csv_files:
             " - % Monthly Charge": "0",
             "Amount Paid": "$0.00",
             "Category": "New Zealand",
-            "Location ID": "FHR-ONL"
+            "Location ID": ""
         })
 
 
@@ -346,7 +344,7 @@ for CSV_FILE in csv_files:
             " - % Monthly Charge": "0",
             "Amount Paid": "$0.00",
             "Category": "New Zealand",
-            "Location ID": "FHR-ONL"
+            "Location ID": ""
         })
 
     # -------------------------
